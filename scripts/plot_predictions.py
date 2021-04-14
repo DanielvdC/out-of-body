@@ -11,6 +11,14 @@ import matplotlib.pyplot as plt
 
 from scipy.signal import medfilt
 
+###############################################################################
+############################### PLOT PREDICTIONS ##############################
+###############################################################################
+
+# This script takes the generated predictions and plots them over a timeline.
+
+###############################################################################
+
 def get_parent_dir(n=1):
     current_path = os.path.dirname(os.path.abspath(__file__))
     for k in range(n):
@@ -19,10 +27,10 @@ def get_parent_dir(n=1):
 
 ### Input paths
 folder = os.path.join(get_parent_dir(1))
-video = os.path.join(folder,'Data','MK_full_video.mp4')
-csv_file = os.path.join(folder,'Output','MK_full_output.csv')
+video = os.path.join(folder,'Data',#YOUR VIDEO HERE)
+csv_file = os.path.join(folder,'Output',#YOUR .csv PREDICTIONS HERE)
 ### FPS of video
-FPS = 30
+FPS = 25
 ### Out of body threshold
 THRESHOLD = 0.9
 
