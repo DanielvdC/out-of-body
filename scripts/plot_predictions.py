@@ -66,12 +66,3 @@ g.set(ylabel=None)
 g.set(xlabel='time (mins)')
 
 plt.show()
-
-
-
-
-
-
-
-
-
