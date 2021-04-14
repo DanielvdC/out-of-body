@@ -11,8 +11,9 @@ In order to do so, follow these steps:
 2. Install necessary packages with:
 <br> pip install -r requirements.txt
 3. Either retrain with your own images by using the ./scripts/retrain.py script
-4. Or add your videos to the ./Data/videos/ folder and run the ./scripts/video_predict_blur.py script
-5. The blurred video will be saved to ./Output/videos/
+4. Or add your videos to the ./Data/videos/ folder
+5. Run the ./scripts/video_predict_blur.py script
+6. The blurred video will be saved to ./Output/videos/
 
 
 # Author
