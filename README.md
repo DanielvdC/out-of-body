@@ -18,7 +18,7 @@ In order to do so, follow these steps:
 
 # Author
 Daniël van den Corput
-danielvdcorput@gmail.com
+<br>danielvdcorput@gmail.com
 
 # Purpose
 This project was created for Incision, see https://www.incision.care/
