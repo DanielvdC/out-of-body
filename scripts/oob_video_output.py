@@ -15,6 +15,17 @@ import tensorflow as tf
 
 from datetime import datetime
 
+###############################################################################
+############################# OUTPUT PREDICTIONS ##############################
+###############################################################################
+
+# This scripts loops over every frame of a provided video in order to generate
+# out of body and in body predictions.
+# Output file is a .csv file, used in the other scripts. Keep the name formats
+# the same for compatibility with the other scripts.
+
+###############################################################################
+
 ### Eager TF execution
 start = time.time()
 tf.compat.v1.disable_eager_execution()
