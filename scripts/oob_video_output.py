@@ -117,11 +117,3 @@ cv2.destroyAllWindows()
 
 end = time.time()
 print('Elapsed time: {}s'.format(end-start))
-
-
-        
-        
-        
-        
-        
-        
