@@ -73,8 +73,8 @@ output_layer = "final_result"
 frames = 75
 
 folder = os.path.join(get_parent_dir(1))
-video = os.path.join(folder,'Data','videos','MK_full_video.mp4')
-output_file = os.path.join(folder,'Output','MK_full_output.csv')
+video = os.path.join(folder,'Data','videos',#YOUR VIDEO HERE)
+output_file = os.path.join(folder,'Output',#YOUR OUTPUT NAME HERE (ends with .csv))
 
 df = pd.DataFrame(columns=['frame','conf_in','conf_out'])
 
