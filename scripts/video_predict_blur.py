@@ -34,6 +34,17 @@ from datetime import datetime
 
 tf.compat.v1.disable_eager_execution()
 
+###############################################################################
+####################### PREDICT AND WRITE BLURRED VIDEO #######################
+###############################################################################
+
+# This script needs a video in the ./Data/videos/ folder. It will create a
+# prediction for every 30th frame in the video and subsequently use those
+# predictions to blur the out of body moments. 
+# The blurred video will be saved to the ./Output/videos/ folder.
+
+###############################################################################
+
 def get_parent_dir(n=1):
     current_path = os.path.dirname(os.path.abspath(__file__))
     for k in range(n):
@@ -124,7 +135,7 @@ if __name__ == "__main__":
 
 video_path = os.path.join(get_parent_dir(1),'Data','videos')
 
-video = os.path.join(video_path,"20180926I04_2.MP4")
+video = os.path.join(video_path,#YOUR VIDEO HERE)
 output_folder = os.path.join(get_parent_dir(1),'Output','predictions')
 output_file = os.path.join(output_folder, 'conf_scores_{}.csv'.format(video.split('/')[-1].split('.')[0]))
 cap = cv2.VideoCapture(video)
@@ -235,5 +246,3 @@ writer.close()
 e_time = datetime.now()
 print('Elapsed time:',e_time-s_time)
 print('[INFO] Done.')
-
-
